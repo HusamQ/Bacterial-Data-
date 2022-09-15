@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- creating a nav bar to github-->
+        <nav class ="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class ="navbar-brand" href="https://github.com/HusamQ/BellyButton-Bacteria-with-Plotly.git"> Back to the repository </a>
+        </nav>
+      <!-- jumbotron -->
+      <div class="row">
+      <div class="col-md-12 jumbotron background text-center">
+        <h1><br>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+      <div>
+        <p><h4>The Purpose of the dashboad is to investigate the sample of bacteria species. We analyze top 10 bacterial species that live in human Bellybutton.
+          What this study based on is the behavior of the bacteria that is capable of producing proteins that taste like beef to start creating synthetic beef. 
+          This dashboard displays the test results of a collection of human belly buttons with different demographics.Each sample is refenced by an ID number, once choosen it will reveal
+          the sample's metadata along with the test results. <br><br>
+
+         </h4></p><br><br>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <p class="barchart">Top 10 baterical specifics found for the selected smaple.</p>
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+      <div id="gauge"></div>
+      </div>
+    </div><br>
+    <br><br>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="bubble"></div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/charts.js"></script>
+  <!-- <script src="./static/js/test.js"></script> -->
+
+</body>
+
+</html>
