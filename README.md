@@ -1,5 +1,4 @@
 # Bacterial-Data-with-Plotly
-Challenge12
 
 This project creates an engaging and dynamic dashboard to share the lab results of the top ten bacterial species that colonize in human bellybutton to create a Improbable Beef. 
 
